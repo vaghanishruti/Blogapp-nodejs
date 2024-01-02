@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "75e4348a-d662-4136-9258-94a40c9196b1",
+		"name": "blogapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27999864"
+	},
+	"item": [
+		{
+			"name": "userdata",
+			"item": [
+				{
+					"name": "signup data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"rahi\",\r\n    \"password\":\"1717\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"rahi\",\r\n    \"password\":\"1517\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "adddata",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "java script",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/01/Pictures/Saved Pictures/photo-1541963463532-d68292c34b19.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/adddata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"adddata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatedata",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/updatedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updatedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alldata",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YmUwNjFiMWVkZmU5MWIzMDQxOThmMiIsImlhdCI6MTY5MDE3NTAwM30.clMVCOsAuqt1xA7nlXtlMUmXmWuW_yB1x-eNvermlm8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/alldata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alldata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletedata",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"64b8c7a07b9dc3d0ead409f4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/deletedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deletedata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "blogfolder",
+			"item": [
+				{
+					"name": "blogadd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "html tutorial",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "html basic information is here",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "64ba6c7796d7f81c163e08b3",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "64ba6ca496d7f81c163e08b5",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/01/Pictures/Saved Pictures/pexels-photo-674010.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/blogadd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogadd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blogall",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YjhkM2QwZWZkZGFlNjhkNTYyNWI0ZSIsImlhdCI6MTY4OTgzNDQ0OH0.1nVtIRGCSEbcBgbI31kqrMWQUB3emJw-Xek72Y-ltV4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/blogall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blogupdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "64b8d5dbd412d3060c9784cd",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "java toutorial",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "java basic information is here",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "64b8cdf2dbf4c564b7b9757a",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "64b8bf7e4cd24216b076db45",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/01/Pictures/Saved Pictures/photo-1541963463532-d68292c34b19.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/blogupdate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogupdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blogdelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"64b8d34cecbafd52d19906e6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blogdelete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogdelete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "signup data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"maya\",\r\n    \"password\":\"1212\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/adminsign",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"adminsign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"shukala\",\r\n    \"password\":\"1717\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/adminlog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"adminlog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user data delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"64ba6c1596d7f81c163e08b0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/userdelete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userdelete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
